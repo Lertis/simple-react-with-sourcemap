@@ -11,9 +11,25 @@
     "react-scripts": "4.0.0",
     "web-vitals": "^0.2.4"
   },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "source-map-loader": "^1.1.2",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.14"
+  },
   "scripts": {
     "start": "react-scripts start",
+    "start:dev": "webpack-dev-server --mode development --open --hot",
     "build": "react-scripts build",
+    "build:prod": "webpack --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
